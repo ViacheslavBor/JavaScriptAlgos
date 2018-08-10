@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>randomchance</title>
+	<script>
+		"use strict";
+			var cash = 100;
+
+			for(var i = cash; i > 0; i--){
+			var chance = Math.floor((Math.random() * 100) + 1);
+			var winning = 77;
+			var award = Math.floor((Math.random() * 100) +50);
+			
+			console.log("winning number: " + chance)
+			console.log("your guess: " + winning)
+			if (chance == winning){
+				console.log(award); 
+				i = i + award;
+				console.log("YOU WON !!!")
+			}
+				console.log("coins left: " + i)
+				console.log("-------------------")
+			}
+	</script>
+</head>
+</html>
